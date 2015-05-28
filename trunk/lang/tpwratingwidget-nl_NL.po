@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ThePerfectWedding.nl Rating Widget\n"
-"POT-Creation-Date: 2015-05-26 16:48+0100\n"
-"PO-Revision-Date: 2015-05-26 16:50+0100\n"
+"POT-Creation-Date: 2015-05-28 12:14+0100\n"
+"PO-Revision-Date: 2015-05-28 12:14+0100\n"
 "Last-Translator: Sem Goedknegt <sem@ivaldi.nl>\n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -24,19 +24,15 @@ msgstr "ThePerfectWedding.nl Widget"
 msgid "TPW Widget Options"
 msgstr "TPW Widget opties"
 
-#: admin/tpwAdminPanel.php:23
-msgid "TPWWidget"
-msgstr "TPWWidget"
-
-#: admin/tpwAdminPanelTemplate.php:12
+#: admin/tpwAdminPanelTemplate.php:21
 msgid "Settings were successfully updated."
 msgstr "Instellingen zijn succesvol aangepast."
 
-#: admin/tpwAdminPanelTemplate.php:27
+#: admin/tpwAdminPanelTemplate.php:37
 msgid "ThePerfectWedding.nl Widget Options"
 msgstr "ThePerfectWedding.nl Widget opties"
 
-#: admin/tpwAdminPanelTemplate.php:30
+#: admin/tpwAdminPanelTemplate.php:40
 msgid ""
 "Send an e-mail to <a href=\"mailto:development@theperfectwedding.nl"
 "\">development@theperfectwedding.nl</a> to apply for an access key. This "
@@ -49,31 +45,31 @@ msgstr ""
 "verstrekt. Vul de sleutel in en kies voor een donkere of lichte variant om "
 "op je website weer te geven."
 
-#: admin/tpwAdminPanelTemplate.php:31
+#: admin/tpwAdminPanelTemplate.php:41
 msgid "Options"
 msgstr "Opties"
 
-#: admin/tpwAdminPanelTemplate.php:36
+#: admin/tpwAdminPanelTemplate.php:46
 msgid "Your Access Key"
 msgstr "Jouw toegangssleutel"
 
-#: admin/tpwAdminPanelTemplate.php:41
+#: admin/tpwAdminPanelTemplate.php:51
 msgid "An example of a correct key"
 msgstr "Voorbeeld van een correcte sleutel"
 
-#: admin/tpwAdminPanelTemplate.php:48 admin/tpwAdminPanelTemplate.php:52
+#: admin/tpwAdminPanelTemplate.php:58 admin/tpwAdminPanelTemplate.php:62
 msgid "Your Widget Style"
 msgstr "Stijl van de widget"
 
-#: admin/tpwAdminPanelTemplate.php:53 admin/tpwAdminPanelTemplate.php:54
+#: admin/tpwAdminPanelTemplate.php:63 admin/tpwAdminPanelTemplate.php:65
 msgid "Light"
 msgstr "Licht"
 
-#: admin/tpwAdminPanelTemplate.php:56 admin/tpwAdminPanelTemplate.php:57
+#: admin/tpwAdminPanelTemplate.php:67 admin/tpwAdminPanelTemplate.php:68
 msgid "Dark"
 msgstr "Donker"
 
-#: admin/tpwAdminPanelTemplate.php:66
+#: admin/tpwAdminPanelTemplate.php:77
 msgid "Save Options"
 msgstr "Instellingen opslaan"
 
@@ -102,6 +98,9 @@ msgstr "uit"
 #: widget/tpwWidgetFrontendTemplate.php:14
 msgid "reviews"
 msgstr "ervaringen"
+
+#~ msgid "TPWWidget"
+#~ msgstr "TPWWidget"
 
 #~ msgid "ThePerfectWedding.nl Rating"
 #~ msgstr "ThePerfectWedding.nl Rating"
