@@ -18,7 +18,7 @@
     //add settings link below plugin in plugins screen
     function TPW_Rating_Widget_link( $links ) {
         $mylink = array(
-            '<a href="' . esc_url( get_admin_url( null, 'options-general.php?page=TPWRatingWidget' ) ) . '">' . __( 'Settings' ) . '</a>'
+            '<a href="' . esc_url( get_admin_url( null, 'options-general.php?page=TPWWidget' ) ) . '">' . __( 'Settings' ) . '</a>'
         );
         return array_merge( $links, $mylink );
     }
