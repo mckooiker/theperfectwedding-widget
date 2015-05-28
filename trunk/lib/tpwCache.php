@@ -13,19 +13,14 @@ class tpwCache {
      * @return array|bool|mixed
      */
     public function readFromCache() {
+        //read cache data
+        $cacheData = get_transient(tpwConfig::CACHE_KEY);
 
-        //if cache file does not exists return false
-        if ( !file_exists( tpwConfig::CACHE_PATH ) ) {
+        if (false === $cacheData){
             return false;
         }
-
-        //if cache expired return false
-        if ( time() - filemtime( tpwConfig::CACHE_PATH ) > tpwConfig::CACHING_TIME ) {
-            return false;
-        }
-
         //return cache data
-        return json_decode( file_get_contents( tpwConfig::CACHE_PATH ) );
+        return json_decode($cacheData);
     }
 
     /**
@@ -33,18 +28,14 @@ class tpwCache {
      * @param $reviewsData          JSON Representation of the reviews data
      */
     public function writeCache( $reviewsData ) {
+        set_transient(tpwConfig::CACHE_KEY,$reviewsData,tpwConfig::CACHING_TIME);
+    }
 
-        //check if we have permissions to write the cache file
-        if (!file_exists(tpwConfig::CACHE_PATH) && !is_writable(tpwConfig::CACHE_DIRECTORY)){
-            return false;
-        }
-        if (file_exists(tpwConfig::CACHE_PATH) && !is_writable(tpwConfig::CACHE_PATH)){
-            return false;
-        }
 
-        //we can write cache go on and write it
-        $fCache = fopen( tpwConfig::CACHE_PATH, 'w' );
-        fputs( $fCache, $reviewsData );
-        fclose( $fCache );
+    /**
+     * Clear cache data
+     */
+    public function clearCache() {
+        delete_transient(tpwConfig::CACHE_KEY);
     }
 }

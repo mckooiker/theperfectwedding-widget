@@ -8,9 +8,8 @@
 
     //clear cache
 
-    if (file_exists(get_home_path() . tpwConfig::CACHE_PATH)) {
-        unlink (get_home_path() . tpwConfig::CACHE_PATH);
-    }
+    $cacheManager = new tpwCache();
+    $cacheManager->clearCache();
 
 
     ?>
@@ -37,7 +36,12 @@
 	<h2><?php _e( 'ThePerfectWedding.nl Widget Options', 'tpwratingwidget' ); ?></h2>
 
 	<form name="tpw_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI'] ); ?>">
-		<p><?php _e( 'Send an e-mail to <a href="mailto:development@theperfectwedding.nl">development@theperfectwedding.nl</a> to apply for an access key. This unique key is only shared with a company profile owner on ThePerfectWedding.nl', 'tpwratingwidget' ); ?></p>
+		<p>Uitleg verkrijgen API key hier met deze styling -  Sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<h3 class="title"><?php _e( 'Options', 'tpwratingwidget'); ?></h3>
 		<table class="form-table">
 			<tbody>
